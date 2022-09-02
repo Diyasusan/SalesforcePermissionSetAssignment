@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="Add Profile and Permission Sets">
+
+        <lightning-input type="text" onkeyup={profileChange} label="Enter the profile" name = "profile" class = "inp" placeholder="type here..." maxlength="25"></lightning-input>
+
+        <lightning-input type="text" onkeyup={permissionChange} label="Enter the permissionsets semicolon seperated"  name = "permissions" class = "inp" placeholder="type here..." maxlength="25"></lightning-input>
+
+        <button class="slds-button slds-button_brand" onclick={handleSubmit}>Submit</button>
+        <button class="slds-button slds-button_brand" onclick={handleReset}>Reset</button>  
+
+    </lightning-card>
+</template>
